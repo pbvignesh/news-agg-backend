@@ -32,6 +32,9 @@ WORKDIR /var/www/html
 # Copy the Laravel application code into the container
 COPY . .
 
+# Install Composer dependencies
+RUN composer install --no-interaction --prefer-dist --optimize-autoloader
+
 # Change ownership of the storage and bootstrap/cache directories
 RUN chown -R laravel:laravel /var/www/html/storage /var/www/html/bootstrap/cache
 
