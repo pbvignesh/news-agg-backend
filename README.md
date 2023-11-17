@@ -3,7 +3,7 @@
 - Set the value of the API Keys for the following variables `NEWS_API_KEY`, `GUARDIAN_API_KEY` and `NEW_YORK_TIMES_API_KEY`
 - Run the following command to run the instance
     > `docker-compose up`
-- Run the following command to run the migrations
+- Run the following command to install the packages
     > `docker-compose exec app composer install`
 - Run the following command to run the migrations
     > `docker-compose exec app php artisan migrate`
