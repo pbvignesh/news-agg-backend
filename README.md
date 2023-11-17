@@ -4,7 +4,7 @@
 - Run the following command to run the instance
     > `docker-compose up`
 - Run the following command to run the migrations
-    `docker-compose exec app composer install`
+    > `docker-compose exec app composer install`
 - Run the following command to run the migrations
     > `docker-compose exec app php artisan migrate`
 - Run the following command to seed the database with the initial set of values. This will take roughly *10 minutes*
